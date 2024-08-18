@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.search-bar input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #777;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav a:hover {
+    background-color: #555;
+}
+
+.main {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: auto auto auto auto
+}
+
+.main-item-name {
+    font-size: 18px;
+
+}
+
+.main-item:hover {
+    border-color: rgb(0, 0, 0);
+}
+
+.main-item {
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid transparent;
+    text-align: center;
+}
+
+.main-item-img {
+    width: 200px;
+}
+
+.main-item-button {
+    width: 100%;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 18px;
+    border: none
+}
+
+.main-item-button:hover {
+    color: #aaaaaa
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #8e8e8e;
+}
+
+.footer p {
+    margin: 10px 0 0;
+}
